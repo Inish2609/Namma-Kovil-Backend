@@ -38,7 +38,7 @@ FROM festivals f
 
 CROSS JOIN users u
 
-LEFT JOIN FESTIVAL_PAYMENTS p
+LEFT JOIN festival_payments p
 ON p.festival_id=f.id
 AND p.user_id=u.id
 
