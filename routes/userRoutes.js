@@ -14,7 +14,7 @@ router.post('/login', userController.login)
 router.get('/', verifyToken, userController.getAllUsers)
 
 //Create a new User Route
-router.post('/new-user', verifyToken, userController.register)
+router.post('/new-user', userController.register)
 
 //Refresh Token Route
 router.post('/refresh-token',verifyToken, userController.refreshToken)
